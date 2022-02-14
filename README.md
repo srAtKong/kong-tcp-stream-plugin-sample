@@ -16,9 +16,10 @@ KONG_PLUGINS=bundled,myplugin
 
 where,  ```myplugin``` is the name of this sample plugin
 
-If running Kong on Docker, craate a docker volume to mount the plugin files - eg I have mounted the plugin files to ```/opt/kong/kong-plugins```
+If running Kong on Docker, create a docker volume to mount the plugin files - eg I have mounted the plugin files to ```/opt/kong/kong-plugins```
+(if using K8s, create a config map and mount it as a volume to the container)
 
-Set the Lua Package Path to the path to the plugin
+Set the Lua Package Path to the path to the plugin files
 
 ```code
 KONG_LUA_PACKAGE_PATH=/opt/conf/kong-plugins/?.lua;
