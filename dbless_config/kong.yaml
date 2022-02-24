@@ -1,0 +1,18 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+- name: example-service
+  url: http://httpbin.org
+  plugins:
+  - name: file-log
+    protocols:
+    - tcp
+    - http
+    - https
+    config:
+      path: /tmp/kong.log
+  routes:
+  - name: example.route
+    paths:
+    - /echo
