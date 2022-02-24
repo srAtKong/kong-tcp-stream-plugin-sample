@@ -1,9 +1,12 @@
 # kong-tcp-stream-plugin-sample
 Sample Plugin for Kong TCP Stream
 
+The plugin is mounted to Kong as a container in dbless mode.
+
 # Pre-requisites
 
-A Running Kong instance configured to support the TCP stream mode: https://konghq.com/blog/tcp-stream-support-kong/
+This sample uses Kong EE. A valid license for Kong-EE should be set to the environment variable $KONG_LICENSE_DATA
+Or if you want to use Kong CE, update the container image in the docker compose file
 
 # Usage
 
