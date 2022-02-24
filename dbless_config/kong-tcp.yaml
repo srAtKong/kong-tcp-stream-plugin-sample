@@ -1,7 +1,7 @@
 _format_version: "1.1"
 services:
 - connect_timeout: 60000
-  host: 45.79.112.203
+  host: tcpbin.com
   name: tcpbin-echo
   port: 4242
   protocol: tcp
