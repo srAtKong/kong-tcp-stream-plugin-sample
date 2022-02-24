@@ -6,7 +6,7 @@ services:
     container_name: kong
     restart: always
     environment:
-      - TZ=${TZ:-Asia/Kolkata}
+      - TZ=${TZ:-Asia/Singapore}
       - KONG_DATABASE=off #database=off for `dbless` mode
       - KONG_DECLARATIVE_CONFIG=/opt/conf/dbless_config/kong-tcp.yaml 
       - KONG_ADMIN_GUI_LISTEN=0.0.0.0:8002, 0.0.0.0:8445 ssl
